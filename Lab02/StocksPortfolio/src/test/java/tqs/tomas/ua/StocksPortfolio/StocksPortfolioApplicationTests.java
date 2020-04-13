@@ -39,6 +39,5 @@ class StocksPortfolioApplicationTests {
 
         double marketValue = 50.0 * 3 + 100.0 * 5;
         assertEquals(marketValue, stocksPortfolio.getTotalValue());
-
     }
 }
