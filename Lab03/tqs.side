@@ -1,0 +1,128 @@
+{
+  "id": "66e040cd-aa7b-4dc0-aa43-4b3dad1b66f5",
+  "version": "2.0",
+  "name": "tqs",
+  "url": "http://demo.redmine.org",
+  "tests": [{
+    "id": "9860f568-e496-4219-bd91-1404282381b3",
+    "name": "tqs",
+    "commands": [{
+      "id": "a832b356-3dc4-4f5e-9067-7bfcb8b8b28f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "30c3c569-b1c1-4e39-a83f-7289f19404dd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1160x773",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d78e411a-9a0c-44e4-95a4-2e75cddd1f7b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Entrar",
+      "targets": [
+        ["linkText=Entrar", "linkText"],
+        ["css=.login", "css:finder"],
+        ["xpath=//a[contains(text(),'Entrar')]", "xpath:link"],
+        ["xpath=//div[@id='account']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/login')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Entrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "10ecac4a-00c6-47b9-a213-907b46c415b7",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='login-form']/form/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "tomas99batista"
+    }, {
+      "id": "f4232a39-89c1-4d26-a7af-3a85758d0410",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login-form']/form/table/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": "tomas12345"
+    }, {
+      "id": "1f8f5651-dfb0-49c0-adbf-0785c5853f0e",
+      "comment": "",
+      "command": "click",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=tr:nth-child(4) input", "css:finder"],
+        ["xpath=//input[@name='login']", "xpath:attributes"],
+        ["xpath=//div[@id='login-form']/form/table/tbody/tr[4]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "427c7665-4e6d-4016-9b71-79e6e67d5c91",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=tomas99batista",
+      "targets": [
+        ["linkText=tomas99batista", "linkText"],
+        ["css=#loggedas > .user", "css:finder"],
+        ["xpath=//a[contains(text(),'tomas99batista')]", "xpath:link"],
+        ["xpath=//div[@id='loggedas']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/users/435885')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'tomas99batista')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "048a5159-d4e8-4c58-812e-97017375a89c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sair",
+      "targets": [
+        ["linkText=Sair", "linkText"],
+        ["css=.logout", "css:finder"],
+        ["xpath=//a[contains(text(),'Sair')]", "xpath:link"],
+        ["xpath=//div[@id='account']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/logout')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sair')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "50d60cc4-4b2d-40b5-8c20-9660fa1e7080",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Entrar",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "97065b8c-d85c-493a-b327-f770f718e4bd",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9860f568-e496-4219-bd91-1404282381b3"]
+  }],
+  "urls": ["http://demo.redmine.org/"],
+  "plugins": []
+}
